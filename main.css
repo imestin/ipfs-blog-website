@@ -1,0 +1,140 @@
+:root {
+    --background-color: #190019;
+    --card-color: #300030;
+    --card-hover-color: #304430;
+    --card-active-text: #ffff44;
+    --menu-color: white;
+    --menu-hover-background-color: #500050;
+    --menu-hover-color: #ffff00;
+    --footer-background: #dddddd;
+    --foter-color: #ffff80;
+    --nav-height: 47px;
+    --footer-height: 110px;
+}
+
+body {
+    background-image: url(background14.jpg);
+}
+
+nav {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: var(--nav-height);
+    background-color: var(--background-color);
+}
+nav a {
+    float: left;
+    display: block;
+    color: var(--menu-color);
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: var(--menu-hover-background-color);
+    color: var(--menu-hover-color);
+}
+
+nav a.right {
+    float: right;
+}
+
+main {
+    padding: 20px;
+    padding-top: var(--nav-height);
+    padding-bottom: var(--footer-height);
+}
+
+
+ul > li {
+    list-style-type: none;
+}
+.cardLink {
+    text-decoration: none;
+}
+.articleCard {
+    padding: 16px;
+    margin: 30px;
+    width: 27vw;
+    text-align: center;
+    color: var(--menu-color);
+    background-color: var(--card-color);
+}
+.articleCard:hover {
+    color: var(--card-active-text);
+    background-color: var(--card-hover-color);
+}
+
+#articleBox {
+    background-color: rgba(255,255,255,0.9);
+    padding: 30px;
+    margin: 50px;
+}
+
+
+.coverImage {
+    min-width: 11vw;
+    max-width: 26vw;
+    min-height: 11vh;
+    max-height: 33vh;
+}
+
+.articleImage {
+    max-width: 80vw;
+    max-height: 80vh;
+    margin: 20px;
+}
+
+footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: var(--footer-height);
+    text-align: center;
+    color: var(--foter-color);
+    background-color: var(--background-color);
+}
+
+
+/* lds-hourglass  from loading.io/css/ */
+.lds-hourglass {
+    display: block;
+    position: relative;
+    width: 16px;
+    height: 80px;
+    padding: 20vh 20vh 20vh 20vh;
+    margin: auto;
+    color: var(--menu-hover-color);
+    /*background-color: rgba(255,255,255,0.4)*/
+  }
+  .lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid var(--menu-hover-color);
+    border-color: var(--background-color) transparent var(--background-color) transparent;
+    animation: lds-hourglass 4.0s infinite;
+  }
+  @keyframes lds-hourglass {
+    0% {
+      transform: rotate(0);
+      animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+      transform: rotate(900deg);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+      transform: rotate(1800deg);
+    }
+  }
+  /* end of lds-hourglass*/
