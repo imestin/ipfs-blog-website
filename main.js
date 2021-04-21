@@ -1,8 +1,4 @@
-var mainDB = null;
 var metaArray = [];
-const gateway = 'https://ipfs.io/';
-//const mainDBurl = gateway + 'ipns/' + 'k2k4r8oid3l6x7ujkn727ziie9kd5u76q7wv3drqyjdesv9b9tudjd3r';
-const mainDBurl = gateway + 'ipns/' + 'k2k4r8o5jkkw6nk8kipb6umqvscneraxiy9ix5uadgjl0i4f6om43vet';
 
 
 // This will download the `database.json` and will display a list of cards of the articles
@@ -54,4 +50,4 @@ async function appendList(index) {
 }
 
 // Start downloading the list of articles and meta information (for Jasmine testing, turn this off)
-loadMain();
+//loadMain();

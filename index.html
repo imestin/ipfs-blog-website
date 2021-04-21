@@ -9,15 +9,25 @@
 <body>
     <nav>
         <a href="index.html">Home</a>
-		<a href="#" class="right">Help the Rebels</a>
+		<a href="#" onclick="openModal()" class="right">Help the Rebels</a>
 	</nav>
 	<main id="main">
 		<div class="lds-hourglass" id="loading"> Loading...</div>
         <ul id="articleList"></ul>
+
+		<div id="chooseHelpFileModal" class="modal">
+			<div class="modalContent">
+				<div id="modalRow1" class="modalRow modalRowTitle">Choose the sentence that describes you the most:</div>
+				<a href="#" id="modalRow2" class="modalRow modalRowButton" onclick="beginner()">"I like computers ... a little."</a>
+				<a href="#"id="modalRow3" class="modalRow modalRowButton" onclick="advanced()">"I like computers a LOT."</a>
+			</div>
+		</div>
 	</main>
 	<footer><h2>Footer</h2><p>Second Line</p></footer>
     
-    <script type="text/javascript" src="main.js"></script>
     <script type="text/javascript" src="meta.js"></script>
+	<script type="text/javascript" src="modal.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+	<script>loadMain();</script>
 </body>
 </html>

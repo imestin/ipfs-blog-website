@@ -1,3 +1,7 @@
+var mainDB = mainDB || null;                                                                    // Create mainDB if does not exist
+var gateway = gateway || 'https://ipfs.io/';                                                    // meta.js is now the file that creates the DB
+const mainDBurl = gateway + 'ipns/' + 'k2k4r8mqe0akz71ijxrmkvhnmf9da1l5uiuuv854jwundi19kqirh4e4';
+
 // Fetch article meta, returns an object
 async function fetchMeta(articleHash) {
     let url = gateway + 'ipfs/' + articleHash + '/meta.json';
@@ -7,4 +11,10 @@ async function fetchMeta(articleHash) {
                             .catch(() => {throw "Couldn't fetch article " + articleHash});      // IPFS error will cause error in the JSON parsing 
                                                                                                 // (response is not a JSON object)
     return obj;
+}
+
+async function loadDB() {
+    mainDB = await fetch(mainDBurl)
+        .then(response => response.json())
+        .catch(error => console.error("Error while fetching the database, ", error));
 }
