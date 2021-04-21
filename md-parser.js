@@ -1,5 +1,5 @@
 function parseMarkdown(markdownText, cid) {
-    let mainFolder = 'https://ipfs.io/' + cid + '/'
+    let mainFolder = 'https://ipfs.io/' + 'ipfs/' + cid + '/'
 	const htmlText = markdownText
 		.replace(/^### (.*$)/gim, '<h3>$1</h3>')
 		.replace(/^## (.*$)/gim, '<h2>$1</h2>')
