@@ -9,15 +9,3 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
-
-
-function beginner() {
-    let cid = mainDB.helpfile_beginner;
-    window.location.href = "help.html?cid=" + cid;
-}
-
-function advanced() {
-    let cid = mainDB.helpfile_advanced;
-    window.location.href = "help.html?cid=" + cid;
-}
-
