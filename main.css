@@ -47,6 +47,8 @@ nav a.right {
 
 main {
     padding: 20px;
+    width: 70vw;
+    margin: auto;
     padding-top: var(--nav-height);
     padding-bottom: var(--footer-height);
 }
@@ -85,8 +87,8 @@ ul > li {
     max-height: 33vh;
 }
 
-.articleImage {
-    max-width: 80vw;
+img {
+    max-width: 90%;
     max-height: 80vh;
     margin: 20px;
 }

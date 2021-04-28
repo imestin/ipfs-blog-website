@@ -8,7 +8,12 @@ async function contentLoader() {
     let mdText = await fetch(gateway + 'ipfs/' + cid + '/article.md').then(response => response.text())
     let article = document.getElementById("articleBox");                                // This will be the main content
     document.getElementById("loading").style = "display: none";                         // Hide loading screen
-    article.innerHTML = parseMarkdown(mdText, cid);
+//    article.innerHTML = parseMarkdown(mdText, cid);
+		//article.innerHTML = markdown.toHTML(mdText)
+		marked.setOptions({
+			baseUrl: 'https://ipfs.io/' + 'ipfs/' + cid + '/'
+		})
+		article.innerHTML = marked(mdText);
 
     let metaObj = await fetchMeta(cid);                                                 // We load this secondly, because fetch might take a lot of time and this is just meta
     document.title = metaObj.title;
