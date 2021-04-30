@@ -15,7 +15,8 @@
 }
 
 body {
-    background-image: url(background5.jpg);
+    background-image: url(background9.jpg);
+    background-size: 100%;
 }
 
 nav {
@@ -75,8 +76,9 @@ ul > li {
 
 #articleBox {
     background-color: rgba(255,255,255,0.9);
-    padding: 30px;
+    padding: 60px;
     margin: 50px;
+    margin: auto;
 }
 
 
@@ -91,6 +93,12 @@ img {
     max-width: 90%;
     max-height: 80vh;
     margin: 20px;
+}
+
+pre {
+    background-color: black; 
+    color: white;
+    padding: 10px;
 }
 
 
