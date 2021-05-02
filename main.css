@@ -102,6 +102,7 @@ pre {
 }
 
 
+
 /* The Modal -------------------------------------------------------------------------------------------------------------------- */
 .modal {
     display: none;
@@ -198,3 +199,17 @@ footer {
     }
   }
   /* end of lds-hourglass*/
+
+
+
+/* Phone  ----------------------------------------------------------------------------------------------------------------------- */
+@media only screen and (max-width: 600px) {
+    main { padding: var(--nav-height) 0 0 0;  width: 100%; }
+    ul { margin-left: -40px; }
+    .articleCard { padding-top: 5px; padding-bottom: 5px; margin: 0px; width: 96%; }
+    .coverImage { min-width: 80%; max-width: 90%; min-height: 20%; max-height: 100%; }
+    #articleBox { padding: 10px; margin: 10px; }
+    .modalRow { font-size: 24px; }
+    footer { display: none; }
+}
+/* Phone end -------------------------------------------------------------------------------------------------------------------- */

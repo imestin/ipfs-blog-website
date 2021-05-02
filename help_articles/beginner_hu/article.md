@@ -30,4 +30,4 @@ A legördüli menüből válaszd a 'From IPFS' opciót (a harmadik) Ezt a három
 
 ![CID importálása](from_cid_big.png)
 
-Ha többre vagy kiváncsi, olvasd el a [haladóknak szóló leírást](https://ipfs.io/ipns/k2k4r8klkhk0uh1b3lytws5o724z2a7qiyto4jroedt8yh4huib1mhij/article.html?cid=QmRUWgCp74JWb8pBRgdJgp3JaDzumT8UG5D5uXE4wEy8kW) is.
+Ha többre vagy kiváncsi, olvasd el a haladóknak szóló leírást is.
