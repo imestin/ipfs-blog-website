@@ -97,6 +97,12 @@ The upload of new articles is not decentralized. We could use a temporary IPFS n
 If we would move the database to Dash Platform, wouldn't solve all of the problems just yet, because in this case we would need to store the access keys for DP somewhere/somehow. But, there is more chance that there will be a MetaMask-like solution in the system of Dash than in IPFS, or there could be a solution using hardware wallets.
 
 
+## Source code
+ * [https://github.com/imestin/ipfs-blog-website](https://github.com/imestin/ipfs-blog-website)
+ * [https://github.com/imestin/ipfs-blog-uploader](https://github.com/imestin/ipfs-blog-uploader)
+ * [https://github.com/imestin/ipfs-blog-daemon](https://github.com/imestin/ipfs-blog-daemon)
+
+
 ## Further reading:
 1. [Learn web-programming](https://www.freecodecamp.org/)
 2. [IPFS Documentation](https://docs.ipfs.io/)

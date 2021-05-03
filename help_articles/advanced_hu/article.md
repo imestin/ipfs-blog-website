@@ -4,7 +4,7 @@ Az _ipfs-blog-daemon_ telepítése a kezdőknek szóló leírásban van részlet
 
 ## Servicek telepítése Debian rendszeren
 
-Mindenek előtt telepíteni kell az IPFS-t a szerveren. [Itt](https://docs.ipfs.io/install/command-line/) van részletezve, hogy hogyan kell feltepeíteni a command-line ipfs-t. A telepítést követően futtassuk az `ipfs init` parancsot és hozzuk létre a `/etc/systemd/system/ipfs.service` fájlt. A fájlnak legyen ez a tartalma:
+Mindenek előtt telepíteni kell az IPFS-t a szerveren. [Itt](https://docs.ipfs.io/install/command-line/) van részletezve, hogy hogyan kell feltepeíteni a command-line ipfs-t. A telepítést követően futtassuk az `ipfs init` parancsot és hozzuk létre az `/etc/systemd/system/ipfs.service` fájlt. A fájlnak legyen ez a tartalma:
 ```
 [Unit]
 Description=IPFS Daemon
@@ -42,11 +42,11 @@ Ha az IPFS már fut, hozzunk létre egy `ipfs_pin_updater.sh` nevű fájlt, pél
 echo $(date +"%Y.%m.%d. %H:%M:%S") >> ipfs_pin_updater.log
 
 # Add website by IPNS name
-/usr/local/bin/ipfs pin add -r /ipns/k2k4r8kgworvwegkpuirutkb9l515r9h3g0ar3k90bdd5sxyxjy861kq >> ipfs_pin_updater.log
+/usr/local/bin/ipfs pin add -r /ipns/k2k4r8nsj5rscg5xkkelcjhgtapmm6s8xvz9biragt9ejfchca3qcy4f >> ipfs_pin_updater.log
 # Add database.json by IPNS name
-/usr/local/bin/ipfs pin add -r /ipns/k2k4r8oid3l6x7ujkn727ziie9kd5u76q7wv3drqyjdesv9b9tudjd3r >> ipfs_pin_updater.log
+/usr/local/bin/ipfs pin add -r /ipns/k2k4r8kcttrnjw0hexlzvq79cv62ua8mde0cjly9kdskg2l8scocozxq >> ipfs_pin_updater.log
 # Add articles folder by IPNS name
-/usr/local/bin/ipfs pin add -r /ipns/k2k4r8jguqxqw3pk96718a7heewolatcoev7itv9zv8mgtcw4e6ki0zo >> ipfs_pin_updater.log
+/usr/local/bin/ipfs pin add -r /ipns/k2k4r8jrbu4auj6sbbutyjyqoxex6py74wyzgfy08gf0mlti3b914kee >> ipfs_pin_updater.log
 
 ```
 
@@ -72,7 +72,7 @@ Ezt a 2 sort adjuk hozz:
 ```
 Ebben a 2 sorban a /29 és a /15 azt jelöli, hogy mennyi percenként fusson le az adott script. [Itt van](https://cron.help/) egy online eszköz, ami segít ennek az értéknek a megszerkesztésében (ha más ütemezést szeretnénk).
 
-Ezzel az IPFS daemon konfigurálása befejeződött. Ha van tűzfal konfigurálása a TCP 4001 5001 8080 8081 és UDP 4002 portokat érdemes megnyitni, [e szerint a fórum bejegyzés szerint](https://discuss.ipfs.io/t/ipfs-ports-firewall/996/2)
+Ezzel az IPFS daemon konfigurálása befejeződött. Ha van tűzfal konfigurálva, a TCP 4001 5001 8080 8081 és UDP 4002 portokat érdemes megnyitni, [e szerint a fórum bejegyzés szerint](https://discuss.ipfs.io/t/ipfs-ports-firewall/996/2)
 
 
 ## Saját blogunk létrehozása
@@ -97,6 +97,13 @@ Az IPFS főként a tartalom megkeresése miatt lassú, ez [itt](https://github.c
 Az új bejegyzések feltöltése nincsen decentralizálva. Lehetne használni egy eldobható IPFS node-ot erre a célra (böngészőben, lásd [js-ipfs](https://js.ipfs.io/)), de akkor publikusan kellene tárolni a kulcsokat, ehhez mindenképpen titkosítás szükséges, és ugye a _brute force_ abszolút lehetséges, mert ez teljesen publikus adat, tehát szükség lenne például egy nagyon erős jelszóra (amivel a privát kulcs titkosítva van). A felhasználók nincsenek hozzászokva az erős jelszavak kezeléséhez, továbbá ahhoz sincsenek hozzászokva, hogy a jelszó elfelejtése esetén nem lehetséges jelszó helyreállítás. Ha nincsen központi szerver, nincsen hol resetelni a jelszót, nincs kitől jelszó helyreállítást kérni.
 
 Az, ha az adatbázist a Dash Platformon tárolnánk egyelőre nem oldalá meg ezt a problémát, mert akkor annak a hozzáférési kulcsát kellene tárolni, de nagyobb az esélye annak, hogy a Dash rendszerében létezni fog valami MetaMask-hoz hasonló megoldás, mint az IPFS esetében, vagy esetleg a hardware wallet ami szóba jöhet. 
+
+
+## Forráskód
+ * [https://github.com/imestin/ipfs-blog-website](https://github.com/imestin/ipfs-blog-website)
+ * [https://github.com/imestin/ipfs-blog-uploader](https://github.com/imestin/ipfs-blog-uploader)
+ * [https://github.com/imestin/ipfs-blog-daemon](https://github.com/imestin/ipfs-blog-daemon)
+
 
 ## További olvasnivaló
 1. [Webprogramozás az alapoktól](https://www.freecodecamp.org/)

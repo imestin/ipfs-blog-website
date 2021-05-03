@@ -12,7 +12,7 @@ After this you have two options: you can host the newest blog, or only the curre
 
 ## Downloading the updater program
 
-If you want your computer to always host the newest version, then you need to download [this](ipfs-blog-daemon) program and this program needs to start every time at startup. If you don't know how to run a program automatically at startup, here are some articles: [Windows10](https://www.howtogeek.com/228467/how-to-make-a-program-run-at-startup-on-any-computer/), [Windows7](https://www.groovypost.com/howto/windows-7-make-programs-run-automatically-during-startup/). The IPFS Desktop itself also needs to start every time at startup.
+If you want your computer to always host the newest version, then you need to download an application (Windows not ready yet, [Linux](ipfs-blog-daemon)) and this program needs to start every time at startup. If you don't know how to run a program automatically at startup, here are some articles: [Windows10](https://www.howtogeek.com/228467/how-to-make-a-program-run-at-startup-on-any-computer/), [Windows7](https://www.groovypost.com/howto/windows-7-make-programs-run-automatically-during-startup/). The IPFS Desktop itself also needs to start every time at startup.
 
 
 ## Only copy the current state

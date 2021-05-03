@@ -17,4 +17,12 @@ async function loadDB() {
     mainDB = await fetch(mainDBurl)
         .then(response => response.json())
         .catch(error => console.error("Error while fetching the database, ", error));
+    refreshHelpLinks();
+}
+
+async function refreshHelpLinks() {
+    let beginner = document.getElementById("modalRow2");
+    let advanced = document.getElementById("modalRow3");
+    beginner.href = "article.html?cid=" + mainDB.helpfile_beginner;
+    advanced.href = "article.html?cid=" + mainDB.helpfile_advanced;
 }

@@ -12,7 +12,7 @@ Ezt követően több lehetőséged van: vagy mindig a legfrissebb blogot szeretn
 
 ## Frissítő program letöltése
 
-Ha azt szeretnéd, ha a számítógéped mindig a legújabb verziót osztaná meg, akkor le kell töltened [ezt a programot](ipfs-blog-daemon) és ennek a programnak a számítógép indításakor mindig el kell indulnia. Ha esetleg nem tudod, hogy hogyan kell automatikusan futtatni egy programot minden indításkor, itt van néhány leírás: [Windows10](https://megnyitasa.com/blog/programok-hozzaadasa-inditashoz-a-windows-10-rendszerben/), [Windows 7,8, 10](https://www.laptopszaki.hu/blog/2016-04-05/tippek-trukkok-programok-hozzaadasa-az-automatikus-inditashoz).Az IPFS-t is ehhez hasonlóan automatikusan el kell indítani minden bekapcsoláskor.
+Ha azt szeretnéd, ha a számítógéped mindig a legújabb verziót osztaná meg, akkor le kell töltened egy alkalmazást (Windows még nincs kész, [Linux](ipfs-blog-daemon)) és ennek a programnak a számítógép indításakor mindig el kell indulnia. Ha esetleg nem tudod, hogy hogyan kell automatikusan futtatni egy programot minden indításkor, itt van néhány leírás: [Windows10](https://megnyitasa.com/blog/programok-hozzaadasa-inditashoz-a-windows-10-rendszerben/), [Windows 7,8, 10](https://www.laptopszaki.hu/blog/2016-04-05/tippek-trukkok-programok-hozzaadasa-az-automatikus-inditashoz).Az IPFS-t is ehhez hasonlóan automatikusan el kell indítani minden bekapcsoláskor.
 
 
 ## Csak a jelenlegi állapot lemásolása
@@ -23,9 +23,9 @@ Ha azt szeretnéd, ha a számítógéped mindig a legújabb verziót osztaná me
 
 A legördüli menüből válaszd a 'From IPFS' opciót (a harmadik) Ezt a három dolgot kell hozzáadnod (külön-külön):
 ```
-/ipfs/QmYZZqxjxW1Ph5Kus3EEwin6Z82XAG95B1r2Bs6b8AApsG
-/ipfs/QmWZWwk2daTZCmDhCuhaNHktaTX9YyENeEruRv3kisNPMW
-/ipfs/QmTcGretNL7bALnFj81JPU4Z8FZdAoK1EAZnww7pBHDDMb
+/ipfs/QmbHM6NxZCXXf2HREFU4tP4RbDRScURRGxnBWCT4yMfWxh
+/ipfs/QmTTdLa8tv7wq2JzdJ5EPBMrikk3RWkRiT94u2dWuYpcMu
+/ipfs/QmWGwBavv6JJdLDosn9X9w5gBj7jocYMNtVHoFGiZ7KvGE
 ```
 
 ![CID importálása](from_cid_big.png)
