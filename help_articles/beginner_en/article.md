@@ -17,9 +17,17 @@ If you want your computer to always host the newest version, then you need to do
 
 ## Only copy the current state
 
-(If you've choosen the above option, you don't need to do this) In the IPFS Desktop application choose the 'Files' menu and click on 'Import'. Choose the 'From IPFS' option. You need to add these three things (one-by-one):
-`/ipfs/QmYZZqxjxW1Ph5Kus3EEwin6Z82XAG95B1r2Bs6b8AApsG`
-`/ipfs/QmWZWwk2daTZCmDhCuhaNHktaTX9YyENeEruRv3kisNPMW`
-`/ipfs/QmTcGretNL7bALnFj81JPU4Z8FZdAoK1EAZnww7pBHDDMb`
+(If you've choosen the above option, you don't need to do this) In the IPFS Desktop application choose the 'Files' menu and click on 'Import'. Choose the 'From IPFS' option. 
+
+![Import button](import.png)
+
+You need to add these three things (one-by-one):
+```
+/ipfs/QmQKicorRF7gizP2GNnkm72vKoSumvAo5vqSpMDyehDE2o
+/ipfs/QmPyxPtN7y5YS7TnP2d7TTB5rg9sQ8xALnBht5Ty9Sq37T
+/ipfs/QmeCWQyt6iB7gd7XZT8QsYSH3mqSwxPctbjTXFPzzsdWqn
+```
+
+![Import CID](from_cid_big.png)
 
 If you want to read more, go to the article that was written to advanced users.

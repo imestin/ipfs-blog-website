@@ -14,7 +14,24 @@
 	</nav>
 	<main id="main">
 		<div class="lds-hourglass" id="loading"> Loading...</div>
-        <ul id="articleList"></ul>
+        
+        <div id="articleBox">
+
+            <h3>This is the site CID: </h3><div id="siteCID_text"></div>
+            <button id='copy_site_cid'>Copy Site CID</button>
+            <h3>This is QR Code for the site CID:</h3>
+            <center><div id="siteCID_qr"></div></center>
+    
+            <h3>This is the articles CID: </h3><div id="articlesCID_text"></div>
+            <button id='copy_articles_cid'>Copy Articles CID</button>
+            <h3>This is QR Code for the articles CID:</h3>
+            <center><div id="articlesCID_qr"></div></center>
+    
+            <h3>This is the previous DB CID: </h3><div id="dbCID_text"></div>
+            <button id='copy_db_cid'>Copy DB CID</button>
+            <h3>This is QR Code for the previous DB CID:</h3>
+            <center><div id="dbCID_qr"></div></center>
+        </div>
 
 		<div id="chooseHelpFileModal" class="modal">
 			<div class="modalContent">
@@ -27,10 +44,11 @@
 	<footer><h2>Footer</h2><p>Second Line.</p></footer>
     
     <script type="text/javascript" src="meta.js"></script>
-	<script type="text/javascript" src="modal.js"></script>
-    <script type="text/javascript" src="main.js"></script>
-	<script>
-		loadMain();
-	</script>
+    <script type="text/javascript" src="modal.js"></script>
+    <script type="text/javascript" src="qrcode.js"></script>
+    <script type="text/javascript" src="cids.js"></script>
+    <script>
+        displayCIDs();
+    </script>
 </body>
 </html>

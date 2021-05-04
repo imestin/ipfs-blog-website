@@ -13,14 +13,14 @@ async function fetchMeta(articleHash) {
     return obj;
 }
 
-async function loadDB() {
-    mainDB = await fetch(mainDBurl)
+async function loadDB() {                                                                       // loads mainDB
+    mainDB = await fetch(mainDBurl)                                                             // and also runs refreshHelpLinks()
         .then(response => response.json())
         .catch(error => console.error("Error while fetching the database, ", error));
-    refreshHelpLinks();
+        refreshHelpLinks();
 }
 
-async function refreshHelpLinks() {
+async function refreshHelpLinks() {                                                             // The help links will be updated with the database.json values
     let beginner = document.getElementById("modalRow2");
     let advanced = document.getElementById("modalRow3");
     beginner.href = "article.html?cid=" + mainDB.helpfile_beginner;
