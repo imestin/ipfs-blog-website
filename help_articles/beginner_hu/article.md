@@ -21,12 +21,8 @@ Ha azt szeretnéd, ha a számítógéped mindig a legújabb verziót osztaná me
 
 ![Import gomb](import.png)
 
-A legördüli menüből válaszd a 'From IPFS' opciót (a harmadik) Ezt a három dolgot kell hozzáadnod (külön-külön):
-```
-/ipfs/QmbHM6NxZCXXf2HREFU4tP4RbDRScURRGxnBWCT4yMfWxh
-/ipfs/QmTTdLa8tv7wq2JzdJ5EPBMrikk3RWkRiT94u2dWuYpcMu
-/ipfs/QmWGwBavv6JJdLDosn9X9w5gBj7jocYMNtVHoFGiZ7KvGE
-```
+A legördüli menüből válaszd a 'From IPFS' opciót (a harmadik). Három dolgot kell hozzáadnod: az üres weboldal CID-jét, az adatbázis CID-jét és a cikkek mappájának CID-jét. Ezeket ennek a weboldalnaka CID-ek menüpontja alatt találod (a weboldal frissülésekor ezek változnak).
+A QR kódok ugyanazt az információt tartalmazzák, ezek főleg az [IPFS Lite](https://play.google.com/store/apps/details?id=threads.server) miatt vannak ott. QR kóddal is kimásolhatod a CID-eket, ha úgy kényelmesebb. Az IPFS Lite az F-Droid-ból is telepíthető.
 
 ![CID importálása](from_cid_big.png)
 

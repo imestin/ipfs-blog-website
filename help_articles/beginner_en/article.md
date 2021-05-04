@@ -21,12 +21,8 @@ If you want your computer to always host the newest version, then you need to do
 
 ![Import button](import.png)
 
-You need to add these three things (one-by-one):
-```
-/ipfs/QmQKicorRF7gizP2GNnkm72vKoSumvAo5vqSpMDyehDE2o
-/ipfs/QmPyxPtN7y5YS7TnP2d7TTB5rg9sQ8xALnBht5Ty9Sq37T
-/ipfs/QmeCWQyt6iB7gd7XZT8QsYSH3mqSwxPctbjTXFPzzsdWqn
-```
+You need to add the CID for the _Site_, the _DB_ and the _articles folder_. The current CIDs are listed in the CIDs menu of this website. The QR codes contain the same information, they are mainly there for [IPFS Lite](https://play.google.com/store/apps/details?id=threads.server), you can copy the values with QR code if it's more comfortable for you. IPFS Lite is also available in F-Droid.
+
 
 ![Import CID](from_cid_big.png)
 
